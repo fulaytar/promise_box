@@ -1,0 +1,138 @@
+/* Common styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    line-height: 1.5;
+    color: #2a2a2a;
+    width: auto;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+input {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+/* Custom styles for the slot machine */
+.item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    outline: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    font-size: 2rem;
+    width: 320px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+
+    width: 100%;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.start-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover,.start-btn:focus {
+    background-color: #0056b3;
+}
+
+.result {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+/* Стилі для великого тексту */
+p.large {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    padding: 20px;
+    background-color: #ebebeb;
+}
+
+/* Стилі для тексту у рамках */
+p.block {
+    display: inline-block;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
